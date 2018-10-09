@@ -170,8 +170,8 @@ app.delete('/bandas/:id', function (request, response) {
 // Atualizando uma banda com PUT!
 // Verbo HTTP que indica que nosso endpoint irá atualizar nosso resource
 
-// Nosso endpoint serã uma mustura da busca de uma unica banda com a
-// criação de uma nova
+// Nosso endpoint será uma mistura do que já vimos com os endpoints de
+// busca e criação
 app.put('/bandas/:id', function (request, response) {
   // Recupera o ID que mandamos como parametro na URL
   var id = request.params.id;
