@@ -40,6 +40,8 @@ app.get('/soma', function (request, response) {
 // Nosso resource serão as bandas para um Festival de Música!
 
 // Configurando conexão ao banco de dados
+// Usaremos MongoDB para este exemplo
+// Banco de dados não relacional, orientado a documentos
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/bandas');
 mongoose.Promise = global.Promise;
@@ -175,7 +177,7 @@ app.put('/bandas/:id', function (request, response) {
   var id = request.params.id;
 
   // Recuperamos os parametros no corpo da requisição
-  var parametros= request.body.banda;
+  var parametros = request.body.banda;
 
   // Verifica se o parametro recuperado existe
   if(!parametros) {
