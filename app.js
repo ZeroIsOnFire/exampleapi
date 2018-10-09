@@ -214,6 +214,7 @@ app.put('/bandas/:id', function (request, response) {
   }
 });
 
+// Inicia nosso servidor!
 app.listen(3000, function() {
   console.log('Iniciado!');
 });
